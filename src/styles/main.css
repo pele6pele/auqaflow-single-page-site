@@ -1,0 +1,208 @@
+.class_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.class_main_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  height: 70vh;
+  background-color: rgba(92, 88, 88, 0.788);
+  border-radius: 25px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  background-image: url('../images//bottle2.png');
+  background-size: 90%;
+  background-position: 300px -20px;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  font-size: 2.3rem;
+}
+
+.title h1 {
+  margin: 0;
+}
+
+.title h3 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 0;
+  color: rgba(241, 233, 233, 0.374);
+}
+
+.title h3:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.class_main_left_all_product {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  width: 200px;
+  height: 70px;
+  background-color: #dfe0e6;
+  border-radius: 20px;
+}
+
+.class_main_left_all_product img {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  width: 40px;
+  cursor: pointer;
+}
+
+.class_main_left_all_product p {
+  margin: 0;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.class_main_left_all_product h3 {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.class_main_left_all_product_border {
+  border-left: 1px solid black;
+  height: 80%;
+  margin-top: 0.5rem;
+}
+
+.class_main_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  width: 30%;
+  height: 70vh;
+}
+
+.class_main_right_up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #caccd4;
+  border-radius: 25px;
+  height: 47%;
+  background-image: url('../images//cup.png');
+  background-size: 80%;
+  background-position: 180px -60px;
+  background-repeat: no-repeat;
+}
+
+.class_main_right_up h1 {
+  margin-left: 2rem;
+}
+.class_main_right_up p {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.class_main_right_up img {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  width: 40px;
+  cursor: pointer;
+}
+
+.class_main_right_down {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #0a0a0aea;
+  border-radius: 25px;
+  height: 47%;
+  color: white;
+  background-image: url('../images//customer-service-technical-support-stock-photography-business-customer-service-4d569dda062208a7ee34c294856b3afa.png');
+  background-size: 90%;
+  background-position: 150px 10px;
+  background-repeat: no-repeat;
+}
+
+.class_main_right_down h1 {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.class_main_right_down_up {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem 0 2rem;
+}
+
+.class_main_right_down_up h3 {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1150px) {
+  .class_main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .class_main_left {
+    align-items: center;
+    width: 80%;
+    margin: 2rem 0 0 0;
+    background-image: url('../images//bottle2.png');
+    background-size: 100%;
+    background-position: 50% 70%;
+  }
+  .title {
+    align-items: center;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 1.5rem;
+  }
+  .class_main_left_all_product {
+    background-color: #dfe0e6e6;
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+
+  .class_main_right {
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    gap: 2rem;
+    width: 80%;
+  }
+
+  .class_main_right_up {
+    background-image: url('../images//cup.png');
+    background-size: 80%;
+    background-position: 90px 40px;
+    background-repeat: no-repeat;
+  }
+
+  .class_main_right_up img {
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+    width: 40px;
+    cursor: pointer;
+  }
+  .class_main_right_down {
+    background-image: url('../images//customer-service-technical-support-stock-photography-business-customer-service-4d569dda062208a7ee34c294856b3afa.png');
+    background-size: 90%;
+    background-position: 100px 20px;
+    background-repeat: no-repeat;
+  }
+  .class_main_right_down h1 {
+    color: rgb(133, 81, 222);
+    text-shadow: 1px 1px black;
+  }
+}

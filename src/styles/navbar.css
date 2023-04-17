@@ -1,0 +1,140 @@
+ul {
+  list-style: none;
+}
+
+.navbar_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background: #dfe0e6;
+  border-bottom: 2px solid #ccccd0;
+}
+
+.navbar_main_left {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.navbar_main_left_list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.navbar_main_left_list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 3rem;
+}
+.navbar_main_left_list li:hover {
+  background-color: #c8c9cd71;
+  border-radius: 50px;
+}
+
+.navbar_main_right {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 3rem;
+  background: rgb(250, 250, 250);
+  width: 170px;
+  height: 40px;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.navbar_main_right button {
+  background: none;
+  border: none;
+  width: 90px;
+  height: 40px;
+}
+
+.navbar_main_right button:hover {
+  background: rgba(92, 88, 88, 0.936);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.app_navbar_smallscreen {
+  display: none;
+}
+
+.app_navbar_smallscreen_overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 40%;
+  height: 42vh;
+  background: rgb(255, 254, 254);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+  padding-top: 2.5rem;
+  gap: 0.5rem;
+  border-radius: 30px 0;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.app_navbar_smallscreen_overlay ul {
+  margin: 0;
+  padding: 0;
+}
+
+.app_navbar_smallscreen_overlay .overlay_close {
+  font-size: 27px;
+  color: rgb(67, 65, 59);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar_main {
+    padding-right: 1.5rem;
+    padding: 0 1.5rem;
+    background-color: #282c34;
+  }
+  .navbar_main_left {
+    display: none;
+  }
+
+  .navbar_main_right {
+    display: none;
+  }
+
+  .app_navbar_smallscreen {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .app_navbar_smallscreen_left h1 {
+    font-size: 35px;
+    color: white;
+  }
+
+  .navbar_main_left_list_smallscreen li {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+
+  .app_navbar_smallscreen_overlay button {
+    margin-top: 0.5rem;
+    background-color: rgba(230, 227, 227, 0.877);
+    border: none;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+  }
+}

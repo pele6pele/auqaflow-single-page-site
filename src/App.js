@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+
+import Navbar from './components/Navbar'
+import Main from './components/Main'
+import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      <Main />
+      <div className="footer_f">
+        <ContactForm />
+        <Footer />
+      </div>
+      <div className="footer_line">
+        <p>© 2023 Aquaflow. Terms & Privacy</p>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
