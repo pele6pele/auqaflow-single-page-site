@@ -1,4 +1,4 @@
-Prototype for water bottle company Aquaflow, created by React and it is full responsive on all mobile devices
+Prototype for water bottle company Aquaflow, created with React and it is full responsive on all mobile devices
 
 
 
